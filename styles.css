@@ -1,0 +1,269 @@
+body{
+    background-color: beige;
+    margin: 0;
+}
+
+.header{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    position: fixed;
+    background-color: beige;
+    width: 100%;
+    top: 0;
+}
+
+.logotipo{
+    display: flex;
+    flex-direction: row;
+}
+
+.header-img{
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+}
+
+.nombre-tienda{
+    margin-left: 20px
+}
+
+.lista-encabezado{    
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+
+.formulario{
+    margin-bottom: 50px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.forumlario-envio{
+   display: flex;
+   flex-direction: column;
+   align-items: center;     
+    
+}
+
+
+.forumlario-envio input{
+    width: 100%;
+    margin: 15px auto;
+    height: 1.9em;
+    border: 1px solid black
+           
+}
+
+.forumlario-envio .submit{
+    width: 140px;
+    height: 30px;
+    margin: 15px auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+    background-color: darkkhaki;
+    border: none;
+    padding-bottom: 35px;
+    cursor: pointer;
+}
+
+.forumlario-envio .submit:hover{
+    background-color: yellow;
+}
+
+
+.producto{
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 13px;
+    row-gap: 50px;
+    font-size: larger;
+    align-content: center;
+    margin-bottom: 55px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.img-producto{
+    width: 80px;
+    height: 80px;
+}
+
+.titulo-cuadro{
+    margin: 0.1em;
+}
+
+.parrafo-cuadro{
+    margin: 0.1em;
+}
+
+
+.nav-link{
+    margin: 0 1.5em
+}
+
+.div-libros{
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.icono-producto, .icono-entrega, .icono-calidad{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;    
+}
+
+.precios{
+    display: flex;
+    flex-direction: row;
+    margin:10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.precios button{
+    font-size: 1.1em;
+    margin-top: 1em;
+}
+
+.encabezado-precio{
+    background-color: gray;
+    padding: 0.5em;
+    text-align: center;
+    color:aliceblue
+}
+
+
+.item-lista-promocion{
+    list-style: none;
+    margin: 0.5em auto
+}
+
+
+
+.precio-1, .precio-2, .precio-3{
+    width: 30%;
+    height: 310px;
+    border: 1px solid black;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.lista-promocion ul{
+    padding-inline-start: 0;
+    margin-top: 2em;
+}
+
+footer{
+    background-color: grey;
+    position: absolute;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.div-footer{
+    display: flex;
+    justify-content: right;
+    
+
+}
+
+.lista-pie{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    
+}
+
+.item-pie{
+    margin: 0 0.5em;
+    
+}
+
+.div-p-footer{
+    margin: -1em 0.5em 0 0;
+    
+}
+
+.div-lista-footer{
+    margin: 0 0.5em 0;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.copyright{
+    font-size: 18px;
+    margin: 0.5em
+}
+
+@media screen and (max-width: 500px) {
+    .producto{
+    display: block;
+    font-size: larger;    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+
+
+}
+    .icono-producto, .icono-entrega, .icono-calidad{
+        visibility: hidden;
+        transform: scale(0);
+       
+    }
+
+    .formulario{
+        margin-bottom: -10px;
+    }
+
+    .encabezado{
+        flex-direction: column;
+
+    }
+    .lista-encabezado{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .items-encabezado{
+        margin: 10px auto;
+    }
+
+    
+}
+
+@media screen and (max-width: 760px){
+    .precios{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        
+
+    }
+
+    .precio-1, .precio-2, .precio-3{
+        max-width: 300px;
+        width: 100%;
+        height: 310px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        text-align: center;    
+        margin-bottom: 15px;    
+    }
+
+}
